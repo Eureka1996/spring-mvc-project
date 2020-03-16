@@ -5,6 +5,17 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+
+  <!--配置filter，可以把POST请求转换为DELETE或POST请求-->
+  <!--<filter>-->
+    <!--<filter-name>hiddenHttpMethodFilter</filter-name>-->
+    <!--<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+    <!--<filter-name>hiddenHttpMethodFilter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+
   <!--配置DispatcherServlet-->
   <servlet>
     <servlet-name>springDispatcherServlet</servlet-name>
