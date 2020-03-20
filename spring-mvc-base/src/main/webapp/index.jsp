@@ -2,6 +2,11 @@
 <body>
     <h2>Hello World!</h2>
 
+    <a href="testMap">Test Map</a>
+    <br/>
+
+    <a href="testModelAndView">Test ModelAndView</a>
+
     <form action="testPojo" method="post">
         username:<input type="text" name="username"/>
         <br/>
