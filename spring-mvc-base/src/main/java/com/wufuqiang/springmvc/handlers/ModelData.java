@@ -32,4 +32,11 @@ public class ModelData {
 		return SUCCESS;
 	}
 
+    //测试自定义视图解析器
+	@RequestMapping("/testView")
+	public String testVies(){
+		System.out.println("Test HelloView");
+		return "helloView";
+	}
+
 }
