@@ -9,6 +9,12 @@
 <%@ page isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
+<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        alert("hello wufuqiang");
+    })
+</script>
 <head>
     <title>Title</title>
     <h2>WuFuqiang</h2>

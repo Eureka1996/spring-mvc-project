@@ -20,11 +20,17 @@ public class EmployeeHandler {
 	@Autowired
 	private DepartmentDao departmentDao;
 
+	/**
+	 * 展示所有员工
+	 * @param map
+	 * @return
+	 */
 	@RequestMapping("/emps")
 	public String list(Map<String,Object> map){
 		map.put("employees",employeeDao.getAll());
 		return "list";
 	}
+
 
 	@RequestMapping(value="emp",method = RequestMethod.GET)
 	public String input(Map<String,Object> map){
@@ -32,6 +38,7 @@ public class EmployeeHandler {
 		map.put("employee",new Employee());
 		return "input";
 	}
+
 
 	@RequestMapping(value="/emp",method = RequestMethod.POST)
 	public String save(Employee employee){
